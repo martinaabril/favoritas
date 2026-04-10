@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas Ghibli</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="container my-4">
+        <h1 class="titulo-principal mb-4">Películas de Studio Ghibli</h1>
+
+        <!-- Buscador -->
+        <div class="mb-3">
+            <input type="text" id="textoBusqueda" class="form-control w-50 d-inline" placeholder="Buscar por título">
+            <button type="button" class="btn btn-primary" id="botonBuscar">Buscar</button>
+        </div>
+
+        <!-- Favoritas -->
+        <h2 class="mt-4">Películas Favoritas</h2>
+        <section id="favoritos" class="row row-cols-1 row-cols-md-3 g-4 mb-4"></section>
+
+        <!-- Resultados de búsqueda -->
+        <h2 class="mt-4">Resultados de la búsqueda</h2>
+        <section id="peliculas" class="row row-cols-1 row-cols-md-3 g-4"></section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-4">
+        <div class="container text-center">
+            <p>© 2026 Películas Ghibli. Para todas las edades</p>
+            <p>Desarrollado por <strong>Martina Abril</strong></p>
+            <div class="social-icons mt-2">
+                <a href="https://github.com/" target="_blank" class="me-3">GitHub</a>
+                <a href="https://twitter.com/" target="_blank" class="me-3">Twitter</a>
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="peliculas.js"></script>
+</body>
+
+</html>
